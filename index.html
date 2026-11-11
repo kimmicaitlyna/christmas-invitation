@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Celebration 2026</title>
+    <link rel="icon" type="image/png" href="images/bg2.jpg">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Basic&family=Knewave&family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=Spicy+Rice&display=swap" rel="stylesheet">    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- LANDING PAGE -->
+    <section id="opening" class="opening">
+        <video autoplay muted loop playsinline id="video-bg">
+            <source src="../images/10616049-uhd_3840_2160_24fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h1>CHRISTMAS CELEBRATION 2026</h1>
+
+        <p>Kepada Yth.</p>
+
+        <h3 id="guest-name"></h3>
+
+        <p>
+            Dengan penuh sukacita, kami mengundang
+            Bapak/Ibu untuk hadir dalam perayaan
+            Natal bersama kami.
+        </p>
+
+        <button id="open-invitation" type="button" class="btn-solid theme-warning">
+            BUKA UNDANGAN
+        </button>
+    </section>
+
+
+    <!-- MAIN INVITATION -->
+    <main id="main-content" hidden>
+        <!-- MUSIC BUTTON -->
+        <button id="music-toggle" class="music-button" type="button">
+            <i class="bi bi-volume-up-fill"></i>
+        </button>
+
+        <!-- THEME -->
+        <div class="main-bg-theme vh-100 d-flex justify-content-center align-items-md-end align-items-center text-center flex-column px-5">
+            <video autoplay muted loop playsinline id="video-bg-satu">
+                <source src="../images/1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="main-content">
+                <h1 class="title text-info">
+                    Merry Christmas
+                </h1>
+
+                <p class="hero-desc fw-bold text-center text-md-end">
+                    Kristus: Sumber pengharapan ditengah ketidakpastian
+                </p>
+            </div>
+        </div>
+
+
+        <!-- BIBLE VERSE -->
+        <div class="main-bg-bible-verse vh-100 d-flex justify-content-center align-items-md-end align-items-center text-center flex-column px-5">
+            <div class="main-content-bible">
+                <p>
+                    "Semoga Allah, sumber pengharapan, memenuhi kamu dengan segala sukacita 
+                    dan damai sejahtera dalam imanmu, supaya oleh kekuatan Roh Kudus kamu 
+                    berlimpah-limpah dalam pengharapan."
+                </p>
+    
+                <p>— Roma 15:13</p>
+            </div>
+        </div>
+
+
+        <!-- EVENT DETAILS -->
+        <div class="main-bg-event-detail vh-100 d-flex justify-content-center align-items-md-end align-items-center text-center flex-column px-5">
+            <video autoplay muted loop playsinline id="video-bg-dua">
+                <source src="../images/2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div class="main-content-event">
+                <p>Tanggal: 14 Desember 2026</p>
+                <p>Waktu: 18.00 WIB</p>
+                <p>Tempat: Mbok Berek Garden Resto, Jalan Magelang km 9, Mulungan Kulon, Mlati, Sleman</p>
+            
+            <!-- GOOGLE MAPS -->
+            <div class="event-map">
+                <iframe
+                    src="https://www.google.com/maps?q=Mbok+Berek+Garden+Resto&output=embed"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            </div>
+        </div>
+
+        <!-- GALLERY -->
+        <div class="main-bg-gallery vh-100 d-flex justify-content-center align-items-md-end align-items-center text-center flex-column px-5">
+            <video autoplay muted loop playsinline id="video-bg-tiga">
+                <source src="../images/3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div class="main-content-gallery">
+                <h2>Gallery</h2>
+
+                <div id="carouselStackedIndicators" class="carousel slide">
+                    <div class="carousel-inner rounded-5">
+                        <div class="carousel-item active">
+                            <img src="../images/ilustrasi-natal-2_169.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/ilustrasi-natal-2_169.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/ilustrasi-natal-2_169.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/ilustrasi-natal-2_169.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/ilustrasi-natal-2_169.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/ilustrasi-natal-2_169.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/ilustrasi-natal-2_169.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/ilustrasi-natal-2_169.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                        <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide="prev">
+                            <span class="carousel-icon-prev" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide="next">
+                            <span class="carousel-icon-next" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            
+        </div>
+
+        <!-- CLOSING -->
+        <div class="main-bg-closing vh-100 d-flex justify-content-center align-items-md-end align-items-center text-center flex-column px-5">
+            <video autoplay muted loop playsinline id="video-bg-closing">
+                <source src="../images/4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div class="main-content-closing">
+                <h2>Merry Christmas & Happy New Year!</h2>
+                <p>
+                    Dengan penuh sukacita, kami menantikan kehadiran Bapak/Ibu dalam perayaan Natal bersama kami.
+                    Merupakan suatu kebahagiaan bagi kami dapat berbagi kasih, sukacita, dan berkat Natal bersama Anda.
+                    Terima kasih atas perhatian dan kesediaannya untuk hadir.
+                </p>
+                <span>With Love & Blessings</span>
+            </div>
+        </div>
+        
+        <!-- MUSIC -->
+        <audio id="bg-music" loop>
+            <source src="music/christmas.mp3" type="audio/mpeg">
+        </audio>
+
+        
+    </main>
+
+</body>
+</html>

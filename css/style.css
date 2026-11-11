@@ -1,0 +1,489 @@
+
+/* ============================= */
+/* LANDING PAGE / OPENING */
+/* ============================= */
+
+.opening {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Styling */
+    text-align: center;
+    padding: 30px;
+    color: white;
+    line-height: 1.5;
+}
+
+/* VIDEO BACKGROUND */
+#video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transform: scale(1.1);
+    opacity: 0.7;
+    z-index: 0;
+}
+
+/* DARK OVERLAY */
+.opening::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.529);
+    z-index: 1;
+}
+
+/* CONTENT */
+.opening h1,
+.opening h3,
+.opening p,
+.opening button {
+    position: relative;
+    z-index: 2;
+}
+
+/* MAIN TITLE */
+.opening h1 {
+    font-size: 40pt;
+    font-family: "Spicy Rice", serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* GUEST NAME */
+.opening h3 {
+    font-size: 20pt;
+    font-family: "Lilita One", sans-serif;
+    margin: 10px 0;
+}
+
+/* PARAGRAPH */
+.opening p {
+    font-size: 15pt;
+    max-width: 550px;
+    margin: 10px 0;
+}
+
+/* OPEN INVITATION BUTTON */
+#open-invitation {
+    margin-top: 25px;
+    transition: all 0.3s ease;
+}
+
+#open-invitation:hover {
+    background-color: #f08400;
+    outline-color: none;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* ============================= */
+/* RESPONSIVE - MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .opening {
+        padding: 20px;
+    }
+
+    .opening h1 {
+        font-size: 24pt;
+    }
+
+    .opening h3 {
+        font-size: 14pt;
+    }
+
+    .opening p {
+        font-size: 11pt;
+        max-width: 100%;
+    }
+
+    #open-invitation {
+        font-size: 10pt;
+    }
+}
+
+
+/* ============================= */
+/* MAIN*/
+/* ============================= */
+
+/* VIDEO BACKGROUND */
+#video-bg-satu {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transform: scale(1.1);
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.main-bg-theme {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    isolation: isolate;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+/* DARK OVERLAY */
+.main-bg-theme::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* TITLE */
+.main-content h1 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 70pt;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-family: "Basic", sans-serif;
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+
+
+
+/* ============================= */
+/* bible verse*/
+/* ============================= */
+
+.main-bg-bible-verse{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("../images/bg2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-content-bible p {
+    font-family: "Basic", sans-serif;
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+
+
+/* ============================= */
+/* EVENT DETAILS */
+/* ============================= */
+
+.main-bg-event-detail {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    isolation: isolate;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+/* VIDEO BACKGROUND */
+#video-bg-dua {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    opacity: 0.7;
+    z-index: -2;
+}
+
+/* DARK OVERLAY */
+.main-bg-event-detail::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* EVENT CONTENT */
+.main-content-event {
+    position: relative;
+    z-index: 1;
+    max-width: 750px;
+    width: 100%;
+}
+
+.main-content-event p {
+    font-family: "Basic", sans-serif;
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+
+/* ============================= */
+/* GALLERY */
+/* ============================= */
+.main-bg-gallery {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    isolation: isolate;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+#video-bg-tiga {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    opacity: 0.7;
+    z-index: -2;
+}
+
+/* DARK OVERLAY */
+.main-bg-gallery::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.main-content-gallery {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    color: white;
+}
+
+.main-content-gallery h2 {
+    font-family: "Basic", sans-serif;
+    font-size: 35pt;
+    margin-bottom: 35px;
+}
+
+#carouselStackedIndicators {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+#carouselStackedIndicators .carousel-inner {
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+#carouselStackedIndicators .carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Navigation */
+#carouselStackedIndicators .btn-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255,255,255,.7);
+    border-radius: 50%;
+    background: transparent;
+    transition: all .3s ease;
+}
+
+#carouselStackedIndicators .btn-icon:hover {
+    background: #f08400;
+    transform: scale(1.1);
+}
+
+/* Indicators */
+#carouselStackedIndicators .carousel-indicators {
+    position: static;
+    margin: 0;
+    display: flex;
+    gap: 5px;
+}
+
+#carouselStackedIndicators .carousel-indicators button {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: none;
+    margin: 0;
+}
+
+
+/* ============================= */
+/* CLOSING */
+/* ============================= */
+.main-bg-closing {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    isolation: isolate;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+#video-bg-closing {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    opacity: 0.7;
+    z-index: -2;
+}
+
+/* DARK OVERLAY */
+.main-bg-gallery::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+
+.main-content-closing h2 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 50pt;
+    margin-bottom: 20px;
+}
+.main-content-closing p {
+    font-family: "Basic", sans-serif;
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+
+.main-content-closing span {
+    font-family: "Basic", sans-serif;
+    font-size: 15pt;
+    margin-bottom: 20px;
+}
+
+/* ============================= */
+/* MUSIC BUTTON */
+/* ============================= */
+
+.music-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 50%;
+
+    background: rgba(20, 35, 25, 0.8);
+    color: white;
+
+    font-size: 20px;
+    cursor: pointer;
+
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+.music-button:hover {
+    background: #f08400;
+    transform: scale(1.1);
+}
